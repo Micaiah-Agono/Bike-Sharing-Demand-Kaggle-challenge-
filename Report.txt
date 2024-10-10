@@ -1,0 +1,21 @@
+
+the model figure is 
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-293.32 -112.36  -33.36   78.98  741.44 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)   6.0462     4.4394   1.362    0.173    
+temp          9.1705     0.2048  44.783   <2e-16 ***
+
+from the values of the model, it can be deduced that at 0 degrees temp, the number of rented bikes rented is 6.0462. 
+It is also deduced that for every 1 degree change in temp, there is a 9.1705 change in number of rented bikes.
+
+Assuming a temp of 30 degree, the number of bike rental will be 
+		6.0462 + 9.1705*30 = 281.1612
+
+also, using the predict() function it can be seen that we have 281.1624 bikes rented.
+
+Using Linear regression which is for linear model is not a good fit for this model since it will not be able to take into account seasonality of our data.
